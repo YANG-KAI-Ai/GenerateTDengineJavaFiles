@@ -85,7 +85,7 @@ for group, fields in groups.items():
         {}
     )
 </insert>
-""".format(insert_id, group, group, ",\n        ".join(f"#{{{field}}}" for field, _ in fields))
+""".format(insert_id, group, group, ",\n        ".join(f"#{{{to_camel_case(field)}}}" for field, _ in fields))
 
         insert_statements.append(insert_statement)
 
