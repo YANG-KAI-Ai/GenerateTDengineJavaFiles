@@ -4,10 +4,10 @@ from collections import defaultdict
 
 # 连接到MySQL数据库
 conn = mysql.connector.connect(
-    host='db.yuyouship.top',
-    user='root',
-    password='Yuyou123',
-    database='yuyou_shore_top'
+    host='',
+    user='',
+    password='',
+    database=''
 )
 
 cursor = conn.cursor()
